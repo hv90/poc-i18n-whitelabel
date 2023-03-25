@@ -1,0 +1,13 @@
+{
+  "translations": {
+    "login": {
+      "title": "Entrar",
+      "email": "Email",
+      "password": "Senha",
+      "login": "Conectar",
+      "signup": "Registrar",
+      "wrongLanguage": "Não está no seu idioma?",
+      "selectorGreeting": "-- Selecione -- "
+    }
+  }
+}
