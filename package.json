@@ -2,7 +2,7 @@
   "name": "poc-react-app",
   "private": false,
   "version": "0.0.0",
-  "homepage": "https://hv90.github.io/poc-i18n-whitelabel",
+  "homepage": "https://hv90.github.io/poc-i18n-whitelabel/",
   "type": "module",
   "scripts": {
     "dev": "vite",
