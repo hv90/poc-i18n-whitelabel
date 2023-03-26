@@ -4,9 +4,9 @@ import Login from "../pages/login";
 const router = createBrowserRouter(
   [
     { path: `/`, element: <Login /> },
-    { path: `/:language`, element: <Login /> },
+    { path: `/:language/`, element: <Login /> },
     {
-      path: `/:language/login`,
+      path: `/:language/login/`,
       element: <Login />,
     },
   ],
