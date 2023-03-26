@@ -55,7 +55,7 @@ const Login: React.FC = () => {
   }, [language]);
 
   return (
-    <Container>
+    <Container id="login-container">
       <TitleContainer>
         <h1>POC-React-App.</h1>
       </TitleContainer>
