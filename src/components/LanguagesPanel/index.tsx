@@ -46,9 +46,7 @@ const LanguagesPanel: React.FC<IProps> = ({
                 type="button"
                 onClick={() => {
                   onSelectLanguage();
-                  navigateTo(
-                    `/${import.meta.env.VITE_BASENAME}/${language}/login`
-                  );
+                  navigateTo(`/${language}/login`);
                 }}
               >
                 {language}

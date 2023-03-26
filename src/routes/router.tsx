@@ -1,13 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "../pages/login";
 
-const router = createBrowserRouter([
-  { path: `/${import.meta.env.VITE_BASENAME}/`, element: <Login /> },
-  { path: `/${import.meta.env.VITE_BASENAME}/:language`, element: <Login /> },
-  {
-    path: `/${import.meta.env.VITE_BASENAME}/:language/login`,
-    element: <Login />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    { path: `/`, element: <Login /> },
+    { path: `/:language`, element: <Login /> },
+    {
+      path: `/:language/login`,
+      element: <Login />,
+    },
+  ],
+  { basename: `/${import.meta.env.VITE_BASENAME}` }
+);
 
 export default router;
