@@ -1,0 +1,1 @@
+const e={login:{title:"Entrar",email:"Email",password:"Senha",login:"Conectar",signup:"Registrar",wrongLanguage:"Não está no seu idioma?",selectorGreeting:"-- Selecione -- "}},n={translations:e};export{n as default,e as translations};
