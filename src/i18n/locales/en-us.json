@@ -8,6 +8,13 @@
       "signup": "Sign up",
       "wrongLanguage": "Not your language?",
       "selectorGreeting": "-- Select --"
+    },
+    "error": {
+      "404": {
+        "title": "Error 404",
+        "subtitle": "Not Found",
+        "linkTitle": "Home"
+      }
     }
   }
 }

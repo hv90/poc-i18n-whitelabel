@@ -1,7 +1,7 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { US, BR } from "country-flag-icons/react/3x2";
 import { useNavigate } from "react-router-dom";
 
 import { Container, DropdownContainer, LanguagesContainer } from "./style";
@@ -49,6 +49,7 @@ const LanguagesPanel: React.FC<IProps> = ({
                   navigateTo(`/${language}/login/`);
                 }}
               >
+                {language.includes("en") ? <US /> : <BR />}
                 {language}
               </button>
             ))}

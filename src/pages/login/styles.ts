@@ -34,6 +34,11 @@ export const Container = styled.div`
     background: black;
     width: 100%;
   }
+
+  a {
+    color: #2086ea;
+    text-decoration: none;
+  }
 `;
 
 export const TitleContainer = styled.div`

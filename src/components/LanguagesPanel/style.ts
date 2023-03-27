@@ -57,6 +57,13 @@ export const LanguagesContainer = styled.div`
     margin: 0;
     font-size: 12px;
     font-weight: 400;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  svg {
+    width: 20px;
   }
 
   button:focus {

@@ -1,1 +1,0 @@
-const n={login:{title:"Sign in",email:"Email",password:"Password",login:"Login",signup:"Sign up",wrongLanguage:"Not your language?",selectorGreeting:"-- Select --"}},a={translations:n};export{a as default,n as translations};

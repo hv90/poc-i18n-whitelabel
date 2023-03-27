@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { TbWorld } from "react-icons/tb";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import Input from "../../components/Input";
 import LanguagesPanel from "../../components/LanguagesPanel";
+import { languages } from "../../routes/router";
 import {
   Container,
   SignupContainer,
@@ -24,9 +25,9 @@ export interface ILoginTranslation {
 }
 
 const Login: React.FC = () => {
-  const languages = ["en-us", "pt-br"];
   const [shouldShowLangsPanel, setShouldShowLangsPanel] = useState(false);
   const { language } = useParams();
+  const navigate = useNavigate();
   const [translation, setTranslation] = useState<ILoginTranslation>({
     title: "",
     email: "",
@@ -36,6 +37,17 @@ const Login: React.FC = () => {
     wrongLanguage: "",
     selectorGreeting: "",
   });
+
+  useEffect(() => {
+    if (
+      language &&
+      languages.filter((lang) => {
+        return lang === language;
+      }).length === 0
+    ) {
+      navigate(`/${language}/404/`);
+    }
+  }, []);
 
   useEffect(() => {
     switch (language) {
