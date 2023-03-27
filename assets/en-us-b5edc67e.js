@@ -1,0 +1,1 @@
+const n={login:{title:"Sign in",email:"Email",password:"Password",login:"Login",signup:"Sign up",wrongLanguage:"Not your language?",selectorGreeting:"-- Select --"},error:{404:{title:"Error 404",subtitle:"Not Found",linkTitle:"Home"}}},t={translations:n};export{t as default,n as translations};
